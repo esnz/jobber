@@ -2,12 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:jobber/utils.dart';
-import 'package:http/http.dart' as http;
-import 'dart:convert';
 import 'models.dart';
 import 'package:flutter_html/flutter_html.dart';
-import 'package:flutter_html/html_parser.dart';
 
 class Details extends StatefulWidget {
   final JobItem jobItem;

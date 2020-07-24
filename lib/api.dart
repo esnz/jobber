@@ -1,11 +1,11 @@
 import 'dart:convert';
 import 'package:http/http.dart' as http;
-
 import 'models.dart';
 
 class Api {
   static Future<List<JobItem>> fetchJobs(String search) async {
-    final response = await http.get('https://jobs.github.com/positions.json?description=$search&page=1');
+    final response = await http.get(
+        'https://jobs.github.com/positions.json?description=$search&page=1');
 
     if (response.statusCode == 200) {
       var data = List<JobItem>();
